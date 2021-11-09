@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets id="VRAssets">
+        <img src="img/lake_alberta.jpg" id="lake" />
+        <img src="img/sunset.jpg" id="sunset" />
+        <img src="img/snow.jpg" id="snow" />
+        <img src="img/brick.jpg" id="brick" />
+        <img src="img/wood.jpg" id="wood" />
+      </a-assets>  
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-dodecahedron position="-3 1.5 0.75" radius="0.75" color="#90EE90"></a-dodecahedron>
+      <a-torus position="-4 1.5 1" rotation="0 90 0" radius="1.5" radiusTubular="0.2" segmentsRadial="36" segmentsTubular="32" arc="360" color="#ADD8E6"></a-torus>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder position="1 0.75 4.5" radius="0.5" height="1.5" color="#FFC65D" material="" geometry=""></a-cylinder>
+      <!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="200" src="#wood" repeat="50 50"></a-plane>
+
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
+      <!-- <a-sky id="theSky" src="#marina" color="rgb(255,255,255)"></a-sky> -->
+      <a-sky id="theSky" src="#lake" color="rgb(255,255,255)"></a-sky>
+    </a-scene>
+  </body>
+</html>
